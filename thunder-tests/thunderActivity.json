@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "aa0666ee-1f2b-43f4-b908-ba33eeb9724a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/obtener/productos",
+    "url": "http://127.0.0.1:8000/obtener/productos",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-03-30T17:35:20.043Z",
+    "modified": "2023-03-30T18:51:49.001Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e8a9fdf9-e790-40dd-af19-8eaf8fe7fb79",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/obtener/productos",
+    "url": "http://127.0.0.1:8000/obtener/productos",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-03-30T18:21:00.886Z",
+    "modified": "2023-03-30T18:21:00.886Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Nombre_Producto\": \"Fabuloso\",\n  \"Descripción_Producto\": \"Limpiador o detergente\",\n  \"Precio_Producto\": 22.50,\n  \"Stock_Producto\": 13,\n  \"Fecha_Ingreso\": \"30-03-2023\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "6575767f-9366-4936-ac68-7e04ee9e8365",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/guardar/productos",
+    "url": "http://127.0.0.1:8000/guardar/productos",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-03-30T18:21:30.109Z",
+    "modified": "2023-03-30T18:53:03.762Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Nombre_Producto\": \"Bonafont\",\n  \"Descripción_Producto\": \"Botella de agua de 1.5 litros\",\n  \"Precio_Producto\": 14,\n  \"Stock_Producto\": 500,\n  \"Fecha_Ingreso\": \"2023-03-30 18:30:42\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c3e29c2e-20db-4c70-b90c-67bf92e19437",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/producto/guardar",
+    "url": "http://127.0.0.1:8000/producto/guardar",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-03-30T18:44:53.325Z",
+    "modified": "2023-03-30T18:45:48.047Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Nombre_Producto\": \"Maestro Limpio\",\n  \"Descripción_Producto\": \"Limpiador o detergente de 2 litros\",\n  \"Precio_Producto\": 22.50,\n  \"Stock_Producto\": 13,\n  \"Fecha_Ingreso\": \"2023-03-30 18:30:42\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

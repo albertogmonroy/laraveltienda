@@ -1,0 +1,129 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+/* Estilos globales */
+
+/* Colores */
+$color-primario: #007bff;
+$color-secundario: #6c757d;
+$color-fondo: #f8f9fa;
+$color-borde: #e9ecef;
+$color-error: #dc3545;
+
+/* Fuente */
+$fuente-titulo: 'Montserrat', sans-serif;
+$fuente-cuerpo: 'Open Sans', sans-serif;
+
+/* Tamaños */
+$tamanio-titulo: 2.5rem;
+$tamanio-subtitulo: 1.5rem;
+$tamanio-cuerpo: 1rem;
+
+/* Estilos */
+$estilo-boton: none;
+$estilo-enlace: none;
+
+/* Estilos para elementos comunes */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $fuente-cuerpo;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fuente-titulo;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: $color-primario;
+  border: none;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: $tamanio-subtitulo;
+  font-weight: 600;
+}
+
+/* Estilos para el contenido principal */
+#contenido-principal {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $color-fondo;
+  border: 1px solid $color-borde;
+}
+
+/* Estilos para los productos */
+.producto {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid $color-borde;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.producto .titulo {
+  font-size: $tamanio-subtitulo;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.producto .descripcion {
+  font-size: $tamanio-cuerpo;
+  margin-bottom: 1rem;
+}
+
+.producto .precio {
+  font-size: $tamanio-subtitulo;
+  font-weight: 600;
+  color: $color-primario;
+}
+
+/* Estilos para el carrito de compras */
+#carrito {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid $color-borde;
+  border-top-left-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+#carrito.mostrar {
+  transform: translateX(0);
+}
+
+#carrito .titulo {
+  font-size: $tamanio-subtitulo;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#carrito .producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}

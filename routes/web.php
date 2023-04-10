@@ -21,3 +21,8 @@ Route::get('/', function () {
 //Rutas de mi CRUD productos
 Route::get('/obtener/productos', [ProductosController::class, 'obtenerProductos'])->name('obtener.productos');
 Route::post('/guardar/productos', [ProductosController::class, 'guardarProducto'])->name('guardar.productos');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

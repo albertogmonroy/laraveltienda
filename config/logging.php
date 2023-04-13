@@ -53,7 +53,23 @@ return [
             'channels' => ['single'],
             'ignore_exceptions' => false,
         ],
+        'info' => [
+            'driver' => 'info',
+            'path' => storage_path('logs/Info/info.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
 
+        'warning' => [
+            'driver' => 'warning',
+            'path' => storage_path('logs/Warning/warning.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
+
+        'error' => [
+            'driver' => 'error',
+            'path' => storage_path('logs/error/error.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
